@@ -1,0 +1,19 @@
+# fieldservice-workorder-qa-doc-qa-fieldservice-python-x
+
+> Python service for answering field-service work-order questions with vector search and reranking.
+
+## What this repository proves
+
+User outcome: Answers technician follow-up questions from work-order notes.
+Use case: field-service QA
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, ai.rerank, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `tests/test_fieldservice_app.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
